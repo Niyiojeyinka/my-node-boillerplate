@@ -1,6 +1,7 @@
 # My NodeJS Application starter kit
 <br>
-
+ My NodeJS Application starter kit for Restfull API
+<br>
 ## Packages
 
 <ul>
