@@ -10,7 +10,8 @@
 <li>express framework</li>
 <li>Body parser to parse request</li>
 <li>Mongoose-unique-validator plugin</li>
-<li>jwt for Auth</li>
+<li>Bcrypt for password hashing</li>
+<li>jsonwebtoken for Auth</li>
 
 
 </ul>
