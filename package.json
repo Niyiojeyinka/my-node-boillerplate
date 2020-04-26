@@ -1,0 +1,26 @@
+{
+  "name": "my-node-boillerplate",
+  "version": "1.0.0",
+  "description": "My nodejs boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niyiojeyinka/my-node-boillerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "nodejs"
+  ],
+  "author": "Olaniyi Ojeyinka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niyiojeyinka/my-node-boillerplate/issues"
+  },
+  "homepage": "https://github.com/niyiojeyinka/my-node-boillerplate#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
