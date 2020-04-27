@@ -5,7 +5,7 @@ const app = express();
 const  useCor= require('./middlewares/cors');
 const exampleRoutes = require('./routes/exampleRoute');
 const userRoutes = require('./routes/userRoute');
-
+const path = require('path');
 
 mongoose.connect('url').then(function(){
 console.log('DB connected Successfully');
@@ -16,9 +16,10 @@ console.log('DB connected Successfully');
 
 
 app.use(bodyParser.json());
-app.use("api",useCor);
-app.use("api/example",exampleRoutes)
-app.use("api/user",userRoutes)
+app.use('/public',express.static(path.join(__dirname,'public')));
+app.use("/api",useCor);
+app.use("/api/example",exampleRoutes)
+app.use("/api/user",userRoutes)
 
 
 module.exports=app;
