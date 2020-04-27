@@ -1,6 +1,6 @@
 # My NodeJS Application starter kit
 <br>
- My NodeJS Application starter kit for Restfull API
+ My Modularized NodeJS Application starter kit for Restfull API
 <br>
 
 ## Packages
@@ -16,3 +16,10 @@
 
 
 </ul>
+
+
+### Instruction for MVC VERSION
+
+the mvc version is on branch mvc of this repository
+just run the command <code> git checkout mvc </code> after cloning this repo
+
