@@ -7,7 +7,7 @@ if(!user){
         error:new Error('User Not Found!')
     });
 }
-bcrypt.compare(re.body.password,user.password).then(
+bcrypt.compare(req.body.password,user.password).then(
     (valid)=>{
 if(!valid){
     return res.status(401).json({        result:0,
