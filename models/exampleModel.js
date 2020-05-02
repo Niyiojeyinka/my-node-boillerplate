@@ -8,4 +8,4 @@ const exampleSchema = mongoose.Schema({
 
 exampleSchema.plugin(uniqueValidator);
 
-module.exports= mongoose.Model("Example",exampleSchema);
+module.exports= mongoose.model("Example",exampleSchema);

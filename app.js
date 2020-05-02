@@ -11,7 +11,7 @@ mongoose.connect('url').then(function(){
 console.log('DB connected Successfully');
 }).catch(function(error){
 
-    console.log('Error Connected'+error);
+    console.log('Error Connected '+error);
 });
 
 
