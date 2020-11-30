@@ -1,11 +1,14 @@
-const mongoose = require('mongoose');
-const uniqueValidator = require('mongoose-unique-validator');
+const mongoose = require("mongoose");
+const uniqueValidator = require("mongoose-unique-validator");
 
-const exampleSchema = mongoose.Schema({
-  name: {type : String,unique:true}
-  //...
-});
+const exampleSchema = mongoose.Schema(
+  {
+    name: { type: String, unique: true },
+    //...
+  },
+  { timestamps: true }
+);
 
 exampleSchema.plugin(uniqueValidator);
 
-module.exports= mongoose.model("Example",exampleSchema);
+module.exports = mongoose.model("Example", exampleSchema);
