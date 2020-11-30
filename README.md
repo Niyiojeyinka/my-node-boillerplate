@@ -1,4 +1,5 @@
 # My NodeJS Application starter kit
+
 <br>
  My Modularized NodeJS Application starter kit for Restfull API
 <br>
@@ -13,13 +14,12 @@
 <li>Mongoose-unique-validator plugin</li>
 <li>Bcrypt for password hashing</li>
 <li>jsonwebtoken for Auth</li>
-
+<li>supertest for test requests</li>
+<li>jest for testing</li>
 
 </ul>
-
 
 ### Instruction for MVC VERSION
 
 the mvc version is on branch mvc of this repository
 just run the command <code> git checkout mvc </code> after cloning this repo
-
