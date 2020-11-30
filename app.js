@@ -5,17 +5,10 @@ const app = express();
 const exampleRoutes = require("./routes/exampleRoute");
 const userRoutes = require("./routes/userRoute");
 const path = require("path");
-const config = { useNewUrlParser: true, useUnifiedTopology: true };
+const dbURL = "mongodb://localhost:27017/{dbname}";
+const database = require("./helpers/database");
 
-mongoose
-  .connect("url", config)
-  .then(function () {
-    console.log("DB connected Successfully");
-  })
-  .catch(function (error) {
-    console.log("Error Connected " + error);
-  });
-
+database.connect(dbURL);
 app.use(bodyParser.json());
 app.use("/public", express.static(path.join(__dirname, "public")));
 app.use("/api/example", exampleRoutes);
