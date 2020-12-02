@@ -16,6 +16,8 @@
 <li>jsonwebtoken for Auth</li>
 <li>supertest for test requests</li>
 <li>jest for testing</li>
+<li>Nodemailler for mailing</li>
+<li>Md5 for unstrict hashing</li>
 
 </ul>
 
