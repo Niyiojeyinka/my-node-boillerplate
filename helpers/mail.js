@@ -21,7 +21,7 @@ exports.sendMail = (receiver, valueObjects, fileName, handleResult) => {
       pass: config.pass,
     },
   });
-  const confirmation = require("./mailTemplates/" + fileName);
+  const confirmation = require("../mails/" + fileName);
 
   const mailOptions = {
     from: config.user,
