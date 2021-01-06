@@ -1,0 +1,47 @@
+{
+  "name": "shortster",
+  "version": "1.0.0",
+  "description": "URL Shortner",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server",
+    "test": "NODE_ENV=test jest --runInBand",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niyiojeyinka/Shortster.git"
+  },
+  "keywords": [
+    "shortster",
+    "nodejs"
+  ],
+  "author": "Olaniyi Ojeyinka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niyiojeyinka/Shortster/issues"
+  },
+  "homepage": "https://github.com/niyiojeyinka/Shortster#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "md5": "^2.3.0",
+    "mysql2": "^2.2.5",
+    "path": "^0.12.7",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "standard-version": "^9.0.0",
+    "supertest": "^6.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
