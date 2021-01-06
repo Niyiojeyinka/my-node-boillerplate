@@ -2,8 +2,8 @@ const nodemailer = require("nodemailer");
 //const confirmation = require("./mailTemplates/confirmation");
 
 const config = {
-  user: "chronicwatchza@gmail.com",
-  pass: "AFSA_Health_Department+27",
+  user: "test@example.com",
+  pass: "password",
 };
 /** send email method
  *
