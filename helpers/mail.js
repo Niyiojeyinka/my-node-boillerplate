@@ -27,7 +27,7 @@ exports.sendMail = (receiver, valueObjects, fileName, handleResult) => {
     from: config.user,
     to: receiver,
     subject: valueObjects.title,
-    html: confirmation.confirmation(valueObjects),
+    html: confirmation.view(valueObjects),
   };
 
   transporter.sendMail(mailOptions, handleResult);

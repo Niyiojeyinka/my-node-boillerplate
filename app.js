@@ -7,8 +7,10 @@ const userRoutes = require("./routes/userRoute");
 const path = require("path");
 const dbURL = "mongodb://localhost:27017/{dbname}";
 const database = require("./helpers/database");
+const cors = require("cors");
 
 database.connect(dbURL);
+app.use(cors());
 app.use(bodyParser.json());
 app.use("/public", express.static(path.join(__dirname, "public")));
 app.use("/api/example", exampleRoutes);

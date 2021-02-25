@@ -1,4 +1,4 @@
-exports.confirmation = (data) => {
+exports.view = (data) => {
   return `
     <!DOCTYPE html>
 <html lang="en">
