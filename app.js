@@ -8,6 +8,7 @@ const path = require("path");
 const dbURL = "mongodb://localhost:27017/{dbname}";
 const database = require("./helpers/database");
 const cors = require("cors");
+require("dotenv").config(); //process.env.DB_HOST
 
 database.connect(dbURL);
 app.use(cors());
