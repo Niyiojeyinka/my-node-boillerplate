@@ -14,7 +14,12 @@ exports.request = async (
   data = {},
   token = null
 ) => {
-  const meta = { method };
+  const meta = {
+    method,
+    headers: {
+      "Content-Type": null,
+    },
+  };
   if (type == "json") {
     meta["headers"]["Content-Type"] = "application/json";
     if (method != "GET" || method != "DELETE") {
