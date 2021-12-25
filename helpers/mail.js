@@ -1,10 +1,10 @@
 const nodemailer = require("nodemailer");
-//const confirmation = require("./mailTemplates/confirmation");
 
 const config = {
   user: "test@example.com",
   pass: "password",
 };
+
 /** send email method
  *
  * @param {*} receiver receiver email
@@ -21,13 +21,14 @@ exports.sendMail = (receiver, valueObjects, fileName, handleResult) => {
       pass: config.pass,
     },
   });
-  const confirmation = require("../mails/" + fileName);
+
+  const mailFile = require("../mails/" + fileName);
 
   const mailOptions = {
     from: config.user,
     to: receiver,
     subject: valueObjects.title,
-    html: confirmation.view(valueObjects),
+    html: mailFile.view(valueObjects),
   };
 
   transporter.sendMail(mailOptions, handleResult);
